@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="38dp">
+
+    <!-- Título SolarSports con fondo amarillo y esquinas redondeadas -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SolarSports"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="#F5D949"/>
+
+    <!-- ScrollView para permitir el desplazamiento si es necesario -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerInParent="true">
+
+        <!-- Contenedor de los elementos de registro -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5D949"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textViewRegisterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar cuenta"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:padding="8dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:layout_margin="16dp"
+                android:background="@android:color/white"
+                android:padding="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:layout_margin="16dp"
+                android:background="@android:color/white"
+                android:padding="8dp"/>
+
+            <!-- EditText para ingresar la contraseña -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:layout_margin="16dp"
+                android:background="@android:color/white"
+                android:padding="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword"
+                android:layout_margin="16dp"
+                android:background="@android:color/white"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar cuenta"
+                android:layout_marginTop="16dp"
+                android:background="#000000"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/textViewBackToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Ya tienes una cuenta? Inicia sesión aquí"
+                android:textColor="#000000"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
